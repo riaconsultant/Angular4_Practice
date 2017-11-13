@@ -1,0 +1,20 @@
+{
+  "name": "Angular4_Practice",
+  "version": "1.0.0",
+  "description": "Angular4 Practice set",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riaconsultant/Angular4_Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riaconsultant/Angular4_Practice/issues"
+  },
+  "homepage": "https://github.com/riaconsultant/Angular4_Practice#readme"
+}
