@@ -1,0 +1,18 @@
+<div class="row">
+  <div *ngFor="let di of tab" class="col-sm-3 box" (click)="onTabSel(di)">
+    <p>Text {{di}}</p>
+  </div>
+</div>
+<div *ngIf="data &&  data !==2">
+  <form #myform="ngForm" (ngSubmit)="submitData(myform)" novalidate>
+    <input id="firstname" name="firstname" ngModel placeholder="First Name" required #firstname="ngModel" [ngClass]="{'has-danger': firstname.invalid,'has-success':firstname.valid }" >
+    <input id="lastname" name="lastname" placeholder="Last Name" ngModel>
+    <input id="age" name="age" [(ngModel)]="age" placeholder="Age"/>
+    <select #cahr [(ngModel)]="selVal" id="na" name="na">
+      <option *ngFor="let val of data" [value]="val.key">{{ val.name }}</option>
+    </select>
+    <button type="submit"class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<pre>{{ myform.value | json}}</pre>
+<div>Color Preference : <input type="text" [(ngModel)]="color" [style.background]='color'/></div>

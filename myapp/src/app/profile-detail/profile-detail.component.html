@@ -1,0 +1,13 @@
+<p>
+  profile-detail
+</p>
+<div *ngIf="user">
+  <div>{{user.name}}</div>
+  <div>{{user.id}} - {{user.name}}</div>
+  <label for="uname">Name</label>
+  <input id="uname" [(ngModel)]="user.name">
+
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+</div>

@@ -1,0 +1,24 @@
+<button (click)="onBack()">Back</button>
+<div *ngIf="stausmessage && !employee">{{ stausmessage }}</div>
+<table class="table table-default"  *ngIf="employee as emp">
+  <thead>
+    <th>Employee Details</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{emp.code}}</td>
+    </tr>
+    <tr>
+      <td>{{emp.name}}</td>
+    </tr>
+    <tr>
+      <td>{{emp.annualSal}}</td>
+    </tr>
+    <tr>
+      <td>{{emp.gendor}}</td>
+    </tr>
+    <tr>
+      <td>{{emp.dob}}</td>
+    </tr>
+  </tbody>
+</table>

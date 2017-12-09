@@ -1,0 +1,37 @@
+<p>{{title}} <span>{{ users | json }}</span></p>
+
+<div class="container">
+  <!-- <input [(ngModel)]="users[0].name" placeholder="Name"/> -->
+  <ul class="complist">
+      <li *ngFor="let u of users" (click)="onSelect(u)" 
+          [class.selected]="u===selectedUser" [routerLink]="['/detail',u.id]">
+          <span class="bridge">{{u.id}}</span> {{u.name}}
+      </li>
+  </ul>
+  <button (click)="testD()">{{ isShow === true ? "Hello" : "Hi" }}OnClick</button>
+  <div>Color Preference : <input type="text" [(ngModel)]="color" [style.background]='color'/></div>
+  <!-- <app-profile-detail [user]="selectedUser"></app-profile-detail> -->
+</div>
+<app-usercount [all]="getTotalEmp()" [male]="getMaleEmp()" [female]="getFemaleEmp()" (changeRadioEvt)="onChangeRadionBtn($event)"></app-usercount>
+<div class="table-responsive">
+  <table *ngIf="employees" class="table">
+    <thead>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th> Annual Salary</th>
+      <th>DOB</th>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let emp of employees;">
+        <tr *ngIf="selectRadioBtnChange=='All' || selectRadioBtnChange==emp.gendor ">
+            <td><a [routerLink]="['/users',emp.code]">{{ emp.code | uppercase }} </a></td>
+            <td>{{ emp.name | custompipe:emp.gendor }}</td>
+            <td>{{ emp.gendor }}</td>
+            <td>{{ emp.annualSal | currency:'USD':true}}</td>
+            <td>{{ emp.dob | date:'dd/MM/y' | uppercase}}</td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,14 @@
+<form #loginform="ngForm" (ngSubmit)="submitLogin(loginform)">
+  <div>
+    <label for="uname">username</label>
+    <input id="uname" name="uname" type="text" #uname ngModel>
+  </div>
+  <div>
+    <label for="pass">password</label>
+    <input id="pass" name="pass" type="password" #pass ngModel>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+  </div>
+</form>

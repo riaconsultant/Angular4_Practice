@@ -1,0 +1,11 @@
+.box{
+    border:1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+
+}
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(184, 183, 183);
+    font-weight: bold;
+}
