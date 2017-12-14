@@ -9,6 +9,8 @@ import { FeaturesComponent } from './features/features.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AuthService } from './auth.service';
+import { ProfileService } from './services/profile.service';
 
 
 @NgModule({
@@ -27,7 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoute,
 
   ],
-  providers: [],
+  providers: [AuthService,ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
