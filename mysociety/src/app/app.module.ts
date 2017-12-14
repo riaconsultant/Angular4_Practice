@@ -11,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuthService } from './auth.service';
 import { ProfileService } from './services/profile.service';
+import { ProfileComponent } from './user/profile/profile.component';
+import { SettingsComponent } from './user/settings/settings.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ProfileService } from './services/profile.service';
     AppComponent,
     PagenotfoundComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
