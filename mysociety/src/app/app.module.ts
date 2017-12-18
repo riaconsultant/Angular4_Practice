@@ -9,12 +9,12 @@ import { FeaturesComponent } from './features/features.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AuthService } from './auth.service';
 import { ProfileService } from './services/profile.service';
 import { ProfileComponent } from './user/profile/profile.component';
 import { SettingsComponent } from './user/settings/settings.component';
 import { NavComponent } from './nav/nav.component';
 import { NotifCardComponent } from './home/notif-card/notif-card.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({
@@ -37,7 +37,7 @@ import { NotifCardComponent } from './home/notif-card/notif-card.component';
     AppRoute,
 
   ],
-  providers: [AuthService,ProfileService],
+  providers: [ProfileService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
