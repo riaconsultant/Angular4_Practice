@@ -13,6 +13,8 @@ import { AuthService } from './auth.service';
 import { ProfileService } from './services/profile.service';
 import { ProfileComponent } from './user/profile/profile.component';
 import { SettingsComponent } from './user/settings/settings.component';
+import { NavComponent } from './nav/nav.component';
+import { NotifCardComponent } from './home/notif-card/notif-card.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { SettingsComponent } from './user/settings/settings.component';
     HeaderComponent,
     FooterComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    NavComponent,
+    NotifCardComponent
   ],
   imports: [
     BrowserModule,
