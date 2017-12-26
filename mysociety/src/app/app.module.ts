@@ -15,6 +15,7 @@ import { SettingsComponent } from './user/settings/settings.component';
 import { NavComponent } from './nav/nav.component';
 import { NotifCardComponent } from './home/notif-card/notif-card.component';
 import { AuthService } from './services/auth.service';
+import { AuthGuard } from './auth.guard';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { AuthService } from './services/auth.service';
     AppRoute,
 
   ],
-  providers: [ProfileService, AuthService],
+  providers: [ProfileService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
