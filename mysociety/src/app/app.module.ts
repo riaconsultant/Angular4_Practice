@@ -16,6 +16,8 @@ import { NavComponent } from './nav/nav.component';
 import { NotifCardComponent } from './home/notif-card/notif-card.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -31,11 +33,13 @@ import { AuthGuard } from './auth.guard';
     ProfileComponent,
     SettingsComponent,
     NavComponent,
-    NotifCardComponent
+    NotifCardComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,
     AppRoute,
+    HttpModule
 
   ],
   providers: [ProfileService, AuthService, AuthGuard],

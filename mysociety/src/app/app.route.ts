@@ -7,10 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { FeaturesComponent } from './features/features.component';
 import { AuthGuard } from './auth.guard';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 const appRoute: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
+  { path:'forgotpassword', component:ForgotpasswordComponent},
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'features', component: FeaturesComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full'},
