@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Component,OnInit,OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,OnDestroy {
   title = 'app';
 
   constructor() {
@@ -14,5 +13,9 @@ export class AppComponent implements OnInit {
   }
   ngOnInit() {
 
+  }
+
+  ngOnDestroy(){
+    
   }
 }

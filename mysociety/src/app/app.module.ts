@@ -39,7 +39,6 @@ import { PublicLayoutHeaderComponent } from './layout/public-layout-header/publi
     NavComponent,
     NotifCardComponent,
     ForgotpasswordComponent,
-    PublicComponent,
     PublicLayoutComponent,
     AppLayoutComponent,
     AppLayoutHeaderComponent,
