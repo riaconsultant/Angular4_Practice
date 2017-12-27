@@ -11,6 +11,9 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { PublicLayoutComponent } from './layout/public-layout/public-layout.component';
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
 import { LandingComponent } from './landing/landing.component';
+import { LockComponent } from './lock/lock.component';
+import { FourComponent } from './four/four.component';
+import { FiveComponent } from './five/five.component';
 
 const appRoute: Routes = [
   { path: '', component: PublicLayoutComponent,
@@ -20,13 +23,15 @@ const appRoute: Routes = [
       { path:'login', component: LoginComponent},
       { path: '', component:LandingComponent },
     ]},
-  { path:'', component: AppLayoutComponent,
+    { path:'', component: AppLayoutComponent,
     children:[
-      { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+      { path: 'home', component: HomeComponent},
       { path: 'features', component: FeaturesComponent},
+      { path:'404', component: FourComponent},
+      { path:'500', component: FiveComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full'},
-  ]},
-  //{ path: '', component:LandingComponent },
+  ],canActivateChild:[AuthGuard]},
+  { path: 'lock', component:LockComponent },
   { path: '**', component: PagenotfoundComponent}
 ];
 

@@ -23,6 +23,9 @@ import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
 import { AppLayoutHeaderComponent } from './layout/app-layout-header/app-layout-header.component';
 import { PublicLayoutHeaderComponent } from './layout/public-layout-header/public-layout-header.component';
 import { LandingComponent } from './landing/landing.component';
+import { LockComponent } from './lock/lock.component';
+import { FourComponent } from './four/four.component';
+import { FiveComponent } from './five/five.component';
 
 
 @NgModule({
@@ -44,7 +47,10 @@ import { LandingComponent } from './landing/landing.component';
     AppLayoutComponent,
     AppLayoutHeaderComponent,
     PublicLayoutHeaderComponent,
-    LandingComponent
+    LandingComponent,
+    LockComponent,
+    FourComponent,
+    FiveComponent
   ],
   imports: [
     BrowserModule,
