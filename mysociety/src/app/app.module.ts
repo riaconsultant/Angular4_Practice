@@ -22,6 +22,7 @@ import { PublicLayoutComponent } from './layout/public-layout/public-layout.comp
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
 import { AppLayoutHeaderComponent } from './layout/app-layout-header/app-layout-header.component';
 import { PublicLayoutHeaderComponent } from './layout/public-layout-header/public-layout-header.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { PublicLayoutHeaderComponent } from './layout/public-layout-header/publi
     PublicLayoutComponent,
     AppLayoutComponent,
     AppLayoutHeaderComponent,
-    PublicLayoutHeaderComponent
+    PublicLayoutHeaderComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,7 @@ import { AuthGuard } from './auth.guard';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { PublicLayoutComponent } from './layout/public-layout/public-layout.component';
 import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
+import { LandingComponent } from './landing/landing.component';
 
 const appRoute: Routes = [
   { path: '', component: PublicLayoutComponent,
@@ -17,7 +18,7 @@ const appRoute: Routes = [
       { path: 'register', component: RegisterComponent},
       { path:'forgotpassword', component:ForgotpasswordComponent},
       { path:'login', component: LoginComponent},
-      
+      { path: '', component:LandingComponent },
     ]},
   { path:'', component: AppLayoutComponent,
     children:[
@@ -25,6 +26,7 @@ const appRoute: Routes = [
       { path: 'features', component: FeaturesComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full'},
   ]},
+  //{ path: '', component:LandingComponent },
   { path: '**', component: PagenotfoundComponent}
 ];
 
