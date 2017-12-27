@@ -18,6 +18,10 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { HttpModule } from '@angular/http';
+import { PublicLayoutComponent } from './layout/public-layout/public-layout.component';
+import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
+import { AppLayoutHeaderComponent } from './layout/app-layout-header/app-layout-header.component';
+import { PublicLayoutHeaderComponent } from './layout/public-layout-header/public-layout-header.component';
 
 
 @NgModule({
@@ -34,7 +38,12 @@ import { HttpModule } from '@angular/http';
     SettingsComponent,
     NavComponent,
     NotifCardComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    PublicComponent,
+    PublicLayoutComponent,
+    AppLayoutComponent,
+    AppLayoutHeaderComponent,
+    PublicLayoutHeaderComponent
   ],
   imports: [
     BrowserModule,
