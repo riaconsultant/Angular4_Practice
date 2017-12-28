@@ -10,7 +10,6 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProfileService } from './services/profile.service';
 import { ProfileComponent } from './user/profile/profile.component';
 import { SettingsComponent } from './user/settings/settings.component';
-import { NavComponent } from './nav/nav.component';
 import { NotifCardComponent } from './home/notif-card/notif-card.component';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './auth.guard';
@@ -25,6 +24,7 @@ import { LockComponent } from './lock/lock.component';
 import { FourComponent } from './four/four.component';
 import { FiveComponent } from './five/five.component';
 import { FormsModule } from '@angular/forms';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 @NgModule({
@@ -37,7 +37,6 @@ import { FormsModule } from '@angular/forms';
     PagenotfoundComponent,
     ProfileComponent,
     SettingsComponent,
-    NavComponent,
     NotifCardComponent,
     ForgotpasswordComponent,
     PublicLayoutComponent,
@@ -47,7 +46,8 @@ import { FormsModule } from '@angular/forms';
     LandingComponent,
     LockComponent,
     FourComponent,
-    FiveComponent
+    FiveComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
