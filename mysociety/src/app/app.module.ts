@@ -7,8 +7,6 @@ import { RegisterComponent } from './register/register.component';
 import { AppRoute } from './app.route';
 import { FeaturesComponent } from './features/features.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { ProfileService } from './services/profile.service';
 import { ProfileComponent } from './user/profile/profile.component';
 import { SettingsComponent } from './user/settings/settings.component';
@@ -26,6 +24,7 @@ import { LandingComponent } from './landing/landing.component';
 import { LockComponent } from './lock/lock.component';
 import { FourComponent } from './four/four.component';
 import { FiveComponent } from './five/five.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -36,8 +35,6 @@ import { FiveComponent } from './five/five.component';
     FeaturesComponent,
     AppComponent,
     PagenotfoundComponent,
-    HeaderComponent,
-    FooterComponent,
     ProfileComponent,
     SettingsComponent,
     NavComponent,
@@ -55,6 +52,7 @@ import { FiveComponent } from './five/five.component';
   imports: [
     BrowserModule,
     AppRoute,
+    FormsModule,
     HttpModule
 
   ],
