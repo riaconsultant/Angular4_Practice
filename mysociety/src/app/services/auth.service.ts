@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class AuthService {
@@ -21,6 +22,13 @@ export class AuthService {
   }
   auth(){
 
+  }
+  
+  signup(){
+    let data={};
+    this.http.post(environment.api_url+"/signup",data).subscribe((result)=>{
+      
+    })
   }
 
   logout(){
