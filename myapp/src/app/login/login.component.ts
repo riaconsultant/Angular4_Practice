@@ -9,8 +9,9 @@ import { NgForm } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
+  loginform:any;
   ngOnInit() {
+    
   }
 
   submitLogin(loginform:NgForm){
